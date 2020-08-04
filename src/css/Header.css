@@ -1,6 +1,7 @@
 .header{
     width: 100%;
     background: var(--LightTopBG);
+    padding: 20px 5%;
     padding-bottom: 40px;
     border-radius: 20px;
     position: relative;
@@ -49,4 +50,8 @@
     border: 0;
     position: absolute;
     right: 5px;
+}
+
+.active{
+    left: 5px;
 }
