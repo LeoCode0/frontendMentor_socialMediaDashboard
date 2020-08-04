@@ -1,0 +1,48 @@
+.SecondaryCard{
+    width: 90%;
+    height: 120px;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--LightCardBG);
+}
+
+.secondaryCard__statsWithText{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+
+.secondaryCard__statsWithText--title{
+    color: var(--LightText);
+    font-weight: 700;
+}
+
+.secondaryCard__statsWithText--count{
+    color: var(--LightTextBlack);
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.secondaryCard__statsWithIcon{
+    width: 55px;
+    height: 100%;
+    display: flex;
+    padding: 14px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.secondaryCard__statsWithIcon--icon svg{
+    font-size: 24px;
+}
+
+.secondaryCard__statsWithIcon--data{
+    font-size: 13px;
+}

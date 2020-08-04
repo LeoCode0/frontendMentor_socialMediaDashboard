@@ -1,9 +1,18 @@
-import React from "react";
-import { PrincipalCard } from "./components/PrincipalCard";
-import { SecondaryCard } from "./components/SecondaryCard";
+import React, { Fragment } from "react";
+import { ListOfSecondaryCards } from "./components/ListOfSecondaryCards";
+import { Header } from "./components/Header";
+import { ListOfPrincipalCards } from './components/ListOfPrincipalCards'
+import { SubTitle } from './components/SubTitle'
 
 import "./css/Globals.css";
 
 export const App = () => {
-  return <SecondaryCard />;
+  return (
+    <Fragment>
+      <Header />
+      <ListOfPrincipalCards />
+      <SubTitle />
+      <ListOfSecondaryCards />
+    </Fragment>
+  );
 };

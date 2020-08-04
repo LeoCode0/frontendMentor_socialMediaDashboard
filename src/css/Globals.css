@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --LimeGreen: hsl(163, 72%, 41%);
+    --BrightRed: hsl(356, 69%, 56%);
+    --Facebook: hsl(208, 92%, 53%);
+    --Twitter: hsl(203, 89%, 53%);
+    --YouTube: hsl(348, 97%, 39%);
+    --Toggle: hsl(230, 22%, 74%);
+
+    /* Light theme */
+    --LightBG: hsl(0, 0%, 100%);
+    --LightTopBG: hsl(225, 100%, 98%);
+    --LightCardBG: hsl(227, 47%, 96%);
+    --LightText: hsl(228, 12%, 44%);
+    --LightTextBlack: hsl(230, 17%, 14%);
+
+    /* dark theme */
+    --DarkBG: hsl(230, 17%, 14%);
+    --DarkTopBG: hsl(232, 19%, 15%);
+    --DarkCardBG: hsl(228, 28%, 20%);
+    --DarkText:hsl(228, 34%, 66%);
+    --DarkTextWhite: hsl(0, 0%, 100%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5{
+    padding: 0;
+    margin: 0;
+}
+
+.Subtitle{
+    font-weight: 700;
+    color: var(--LightText);
+    margin-bottom: 20px;
+}

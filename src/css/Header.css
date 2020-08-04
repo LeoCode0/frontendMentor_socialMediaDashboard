@@ -1,0 +1,52 @@
+.header{
+    width: 100%;
+    background: var(--LightTopBG);
+    padding-bottom: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.header__title{
+    font-weight: 700;
+    padding: 10px 0 5px 0;
+}
+
+.header__totalFollowers{
+    font-weight: 700;
+    color: var(--LightText);
+    font-size: 14px;
+}
+
+.header__darkMode{
+    border-top: 1px solid black;
+    margin-top: 15px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__darkMode--span{
+    font-weight: 700;
+    color: var(--LightText);
+}
+
+.header__darkMode--box{
+    width: 60px;
+    height: 30px;
+    background-color: var(--Toggle);
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__darkMode--button{
+    background-color: var(--LightBG);
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: 0;
+    position: absolute;
+    right: 5px;
+}
