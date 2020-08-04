@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import { App } from './App'
+
 ReactDOM.render(
-    <h1>Test</h1>, document.getElementById('App')
+    <App />, document.getElementById('App')
 )
