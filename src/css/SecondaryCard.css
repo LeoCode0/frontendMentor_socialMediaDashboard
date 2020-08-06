@@ -46,3 +46,12 @@
 .secondaryCard__statsWithIcon--data{
     font-size: 13px;
 }
+
+.dark .SecondaryCard{
+    color: var(--DarkTextWhite);
+    background-color: var(--DarkCardBG);
+}
+
+.dark .secondaryCard__statsWithText--count{
+    color: var(--DarkTextWhite);
+}

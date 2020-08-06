@@ -1,15 +1,22 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { ChooseIcon } from '../utils/ChooseIcon'
 import { ColorStatsToday } from '../utils/ColorStatsToday'
+
+import ThemeContext from '../Context'
 
 import '../css/PrincipalCard.css'
 
 export const PrincipalCard = ({socialNetwork = 'Instagram', user = '@nathanf', followerCount = 1987, followerName = 'followers', isUp = true, countFollowersToday = 99 }) => {
     let ColorStats = ColorStatsToday(isUp);
-    const stylesCard = `principalCard ${socialNetwork}`
     const icon = ChooseIcon(socialNetwork, 'iconNetwork')
+    const {mode} = useContext(ThemeContext)
+    if (mode === 'light'){
+        socialNetwork += ''
+    } else{
+        socialNetwork += ' dark'
+    }
     return(
-        <div className={stylesCard}>
+        <div className={`principalCard ${socialNetwork}`}>
             <div className="principalCard__social">
                 {icon} <span className="principalCard__social--username">{user}</span>
             </div>

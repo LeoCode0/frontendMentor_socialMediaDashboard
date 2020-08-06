@@ -3,7 +3,7 @@
     background: var(--LightTopBG);
     padding: 20px 5%;
     padding-bottom: 40px;
-    border-radius: 20px;
+    border-radius: 0 0 50px 50px;
     position: relative;
 }
 
@@ -54,4 +54,16 @@
 
 .active{
     left: 5px;
+}
+
+.dark{
+    background-color: var(--DarkTopBG);
+}
+
+.dark .header__title{
+    color: var(--DarkTextWhite);
+}
+
+.dark .header__totalFollowers, .dark .header__darkMode--span{
+    color: var(--DarkText);
 }

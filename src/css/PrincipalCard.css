@@ -97,3 +97,15 @@
 .iconNetwork.Instagram{
     color: hsl(329, 70%, 58%);
 }
+
+.dark.principalCard{
+    background-color: var(--DarkCardBG);
+}
+
+.dark.principalCard__social--username{
+    color: var(--DarkText);
+}
+
+.dark .principalCard__count .principalCard__count--number{
+    color: var(--DarkTextWhite);
+}
