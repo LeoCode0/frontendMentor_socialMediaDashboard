@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 
+import '../css/Subtitle.css'
+
 import Theme from '../Context'
 
 export const SubTitle = () => {

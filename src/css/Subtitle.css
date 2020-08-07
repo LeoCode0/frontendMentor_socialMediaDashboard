@@ -1,0 +1,22 @@
+.Subtitle{
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.light.Subtitle{
+    color: var(--LightText);
+}
+
+.dark.Subtitle{
+    color: var(--DarkTextWhite);
+}
+
+@media screen and (min-width: 765px){
+    .Subtitle{
+        width: 78%;
+        text-align: left;
+        margin: 30px auto;
+
+    }
+}

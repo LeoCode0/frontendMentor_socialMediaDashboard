@@ -13,9 +13,11 @@ export const Header = () => {
     if (mode === "light") {
       element.classList.add("active");
       document.body.classList.add("dark")
+      document.getElementsByClassName("header__darkMode--box")[0].classList.add("activeBox")
       setMode("dark");
     } else {
       element.classList.remove("active");
+      document.getElementsByClassName("header__darkMode--box")[0].classList.remove("activeBox")
       document.body.classList.remove("dark")
       setMode("light");
     }
@@ -29,8 +31,10 @@ export const Header = () => {
 
   return (
     <header className={header}>
+    <div className="principal">
       <h2 className="header__title">Social Media Dashboard</h2>
       <span className="header__totalFollowers">Total Followers: 23,004</span>
+    </div>
       <div className="header__darkMode">
         <span className="header__darkMode--span">Dark Mode</span>
         <div className="header__darkMode--box">

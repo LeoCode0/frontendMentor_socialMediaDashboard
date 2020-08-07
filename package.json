@@ -21,7 +21,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "build": "webpack",
+    "build": "webpack -p --mode production",
     "dev": "webpack-dev-server --open --history-api-fallback"
   },
   "keywords": [

@@ -1,5 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { PrincipalCard } from "./PrincipalCard";
+
+import '../css/ListOfPrincipalCards.css'
 
 export const ListOfPrincipalCards = () => {
   const defaultUser = "@nathanf";
@@ -41,10 +43,10 @@ export const ListOfPrincipalCards = () => {
   ];
 
   return (
-    <Fragment>
+    <div className="ListOfPrincipalCards">
         {
             socialNetworks.map((socialNetwork, key) => <PrincipalCard key={key} {...socialNetwork} />)
         }
-    </Fragment>
+    </div>
   );
 };

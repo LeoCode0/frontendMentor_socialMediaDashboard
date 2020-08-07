@@ -1,5 +1,7 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { SecondaryCard } from './SecondaryCard';
+
+import '../css/ListOfSecondaryCards.css'
 
 export const ListOfSecondaryCards = () => {
     const SocialNetworks = [
@@ -61,10 +63,10 @@ export const ListOfSecondaryCards = () => {
         },
     ]
     return(
-        <Fragment>
+        <div className="ListOfSecondaryCards">
             {
                 SocialNetworks.map((socialNetwork, key) => <SecondaryCard key={key} {...socialNetwork} />)
             }
-        </Fragment>
+        </div>
     )
 }

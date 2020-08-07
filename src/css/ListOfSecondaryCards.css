@@ -1,0 +1,9 @@
+@media screen and (min-width: 765px){
+    .ListOfSecondaryCards{
+        display: grid;
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 1fr 1fr;
+    }
+}
